@@ -5,7 +5,7 @@ const bodyParser = require('body-parser')
 const router = require('./config/router')// ge router module
 const logger = require('./lib/logger')
 const errorHandler = require('./lib/errorHandler')
-const { dbURI } = require('./config/environment')
+const { dbURI, port } = require('./config/environment')
 
 require('dotenv').config()
 
@@ -27,7 +27,7 @@ app.use(errorHandler)
 
 app.get('/*', (req, res) => res.status(404).json({ message: 'Not Found checking' })) // catch all
 
-app.listen(process.env.PORT, () => console.log(`Running on port ${process.env.PORT}`))
+app.listen(port, () => console.log(`server listening on port ${port}`))
 
 app.get('/*', (req, res) => res.sendFile(`${__dirname}/dist/index.html`))
 
