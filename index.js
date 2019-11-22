@@ -28,6 +28,7 @@ app.use(errorHandler)
 app.get('/*', (req, res) => res.status(404).json({ message: 'Not Found checking' })) // catch all
 
 app.listen(port, () => console.log(`server listening on port ${port}`))
+//app.listen(process.env.PORT, () => console.log(`Running on port ${process.env.PORT}`))
 
 app.get('/*', (req, res) => res.sendFile(`${__dirname}/dist/index.html`))
 
