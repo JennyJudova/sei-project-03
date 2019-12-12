@@ -1,6 +1,8 @@
 _Software Engineering Immersive: Project 3_
 This is the third project during the General Assembly Software Engineering Immersive course (Week 9). The project was a collaboration between Jenny Judova, Claire Smith, Paul Cooke and Lloyd Noon.
 
+<img src="./assets/pic1.png" alt="home screen" height="500" width="780">
+
 ---
 
 ## Alloted
@@ -65,9 +67,15 @@ Use the clone button to download the source code. In the terminal enter the foll
 
 The app is a two sided sharing platform. Users can be vegetable growers who want to share, and people who want to collect vegetable from others or both.
 
+<img src="./assets/pic2.png" alt="registration screen" height="500" width="780">
+
 Vegetable that is being offered by other users can be browsed from the ‘veg on offer’ page, either in tile view or toggled to map view and there is a search bar with live filters. The tiles show a short summary of the vegetables available and will indicate if it has already been claimed by someone else.
 
+<img src="./assets/pic3.png" alt="veg on offer screen" height="500" width="780">
+
 Individual vegetables can be viewed from here, and if you click the claim button it will take you to the sign in page. On signing in, it will push you back to the vegetable page so you can claim it.
+
+<img src="./assets/pic4.png" alt="veg listing screen" height="500" width="780">
 
 Once logged in, you can create a vegetable listing or edit the ones you created earlier. When looking at other users listings you can claim them. When a user creates a vegetable listing they select their preferences for collection, which days and times they are available. When you claim a vegetable you pick a day of the week (it defaults in the invitation to the next available Monday or Tuesday, etc) and the time you would like to collect and this triggers a claim notification to the user that posted the veg. You won’t see the claim options if someone has already claimed the vegetable.
 
