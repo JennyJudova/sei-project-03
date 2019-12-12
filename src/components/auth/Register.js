@@ -38,7 +38,6 @@ class Register extends React.Component {
 
   render() {
     console.log('render state Register', this.state)
-    console.log('render errors', this.state.errors)
     const { errors } = this.state
     return (
       <div className='mainFormWrapRegister'>
